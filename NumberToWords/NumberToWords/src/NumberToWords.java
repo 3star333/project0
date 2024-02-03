@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class NumberToWords {
+
    public static String digitToWord(int digitIn) {
+
       switch (digitIn) {
          case 0:
             return "zero";
@@ -62,6 +64,7 @@ public class NumberToWords {
    }
 
    public static void main(String[] args) {
+      System.out.println("Enter a number between 0 and 99");
       Scanner scnr = new Scanner(System.in);
       int num = scnr.nextInt();
       String words = twoDigitNumToWords(num);
